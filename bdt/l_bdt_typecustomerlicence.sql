@@ -1,0 +1,34 @@
+CREATE OR REPLACE TYPE BODY typeCustomerLicence
+IS
+
+MEMBER FUNCTION getLicence RETURN varchar2
+IS
+BEGIN
+  RETURN licence;
+END;
+
+MEMBER FUNCTION getName RETURN varchar2
+IS
+BEGIN
+  RETURN name;
+END;
+
+MEMBER FUNCTION getDate_naiss RETURN date
+IS
+BEGIN
+  RETURN TO_DATE(date_naiss, 'yyyy-mm-dd');
+END;
+
+MEMBER FUNCTION getGender RETURN varchar2
+IS
+BEGIN
+  RETURN gender;
+END;
+
+MEMBER FUNCTION getGrade RETURN varchar2
+IS
+BEGIN
+  RETURN grade;
+END;
+
+END;

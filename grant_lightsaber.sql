@@ -1,0 +1,6 @@
+GRANT SELECT ON l_bde_store TO NF26;
+GRANT SELECT ON l_bde_planet TO NF26;
+GRANT SELECT ON l_bde_solar TO NF26;
+GRANT SELECT ON l_bde_sector TO NF26;
+GRANT SELECT ON l_bdt_store TO NF26;
+GRANT SELECT ON l_dw_store TO NF26;

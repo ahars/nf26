@@ -1,0 +1,24 @@
+DROP TABLE l_bde_store;
+
+CREATE TABLE l_bde_store (
+  mag VARCHAR(4),
+  dateOpening VARCHAR(10),
+  planet VARCHAR(50)
+)
+ORGANIZATION EXTERNAL
+(TYPE ORACLE_LOADER
+DEFAULT DIRECTORY nf26p024lightsaberdatafile
+ACCESS PARAMETERS
+(
+RECORDS DELIMITED BY newline
+SKIP 1
+characterset UTF8
+BADFILE nf26p024lightsabertmp:'store.csv.bad'
+LOGFILE nf26p024lightsabertmp:'store.csv.log'
+FIELDS TERMINATED BY ';'
+OPTIONALLY ENCLOSED BY '"'
+)
+LOCATION ('Store'))
+REJECT LIMIT UNLIMITED;
+
+

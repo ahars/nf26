@@ -1,0 +1,22 @@
+CREATE OR REPLACE TYPE BODY typeVente
+IS
+
+MEMBER FUNCTION getDate RETURN varchar2
+IS
+BEGIN
+  RETURN fk_date;
+END;
+
+MEMBER FUNCTION getMag RETURN varchar2
+IS
+BEGIN
+  RETURN fk_mag;
+END;
+
+MEMBER FUNCTION getLicence RETURN varchar2
+IS
+BEGIN
+  RETURN fk_licence;
+END;
+
+END;
