@@ -4,9 +4,9 @@ ALTER TABLE l_bdt_vente
 ADD CONSTRAINT l_bdt_vente_fklicence
 FOREIGN KEY (fk_licence) REFERENCES l_bdt_customerlicence(licence);
 
-/*ALTER TABLE l_bdt_vente
+ALTER TABLE l_bdt_vente
 ADD CONSTRAINT l_bdt_vente_fkmag
-FOREIGN KEY (fk_mag) REFERENCES l_bdt_store(mag);*/
+FOREIGN KEY (fk_mag) REFERENCES l_bdt_store(mag);
 
 ALTER TABLE l_bdt_vente
 ADD CONSTRAINT l_bdt_vente_fkdate

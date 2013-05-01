@@ -8,9 +8,9 @@ ALTER TABLE l_dw_vente
 ADD CONSTRAINT l_dw_vente_fklicence
 FOREIGN KEY (fk_licence) REFERENCES l_dw_customerlicence(licence);
 
-/*ALTER TABLE l_dw_vente
+ALTER TABLE l_dw_vente
 ADD CONSTRAINT l_dw_vente_fkmag
-FOREIGN KEY (fk_mag) REFERENCES l_dw_store(mag);*/
+FOREIGN KEY (fk_mag) REFERENCES l_dw_store(mag);
 
 ALTER TABLE l_dw_vente
 ADD CONSTRAINT l_dw_vente_fkdate

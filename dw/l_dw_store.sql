@@ -10,7 +10,7 @@ solarSystem VARCHAR(50),
 quadran VARCHAR(3)
 );
 
-/*CREATE UNIQUE INDEX l_dw_store_idx ON l_dw_store(mag);*/
+CREATE UNIQUE INDEX l_dw_store_idx ON l_dw_store(mag);
 
-/*ALTER TABLE l_dw_store
-ADD CONSTRAINT l_dw_store_pk PRIMARY KEY (mag);*/
+ALTER TABLE l_dw_store
+ADD CONSTRAINT l_dw_store_pk PRIMARY KEY (mag);

@@ -3,9 +3,13 @@ IS
 
 MEMBER FUNCTION getDat RETURN date
 IS
+  l_date DATE;
 BEGIN
-  /* TODO: contrôle des dates non conformes*/
-  RETURN TO_DATE(ddate, 'yyyy-mm-dd');
+  l_date := TO_DATE(ddate, 'yyyy-mm-dd');
+  RETURN l_date;
+  EXCEPTION
+    WHEN others THEN
+      RETURN to_date ('9999-01-01', 'yyyy-mm-dd');
 END;
 
 MEMBER FUNCTION getJds RETURN varchar2

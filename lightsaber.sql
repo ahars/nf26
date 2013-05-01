@@ -32,8 +32,8 @@
 
 /* DW */
 
-@l_dw_store.sql;
 DROP TABLE l_dw_vente;
+@l_dw_store.sql;
 @l_dw_customerlicence.sql;
 @l_dw_date.sql;
 @l_dw_vente.sql;
