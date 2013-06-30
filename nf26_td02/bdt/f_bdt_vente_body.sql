@@ -1,0 +1,22 @@
+CREATE OR REPLACE TYPE BODY vente 
+IS
+
+MEMBER FUNCTION getMagasin RETURN varchar2
+IS
+BEGIN
+  RETURN fk_magasin;
+END;
+
+MEMBER FUNCTION getDate RETURN date
+IS
+BEGIN 
+  RETURN TO_DATE(fk_date,'yyyy-mm-dd');
+END;
+
+MEMBER FUNCTION getIsbn RETURN varchar2
+IS
+BEGIN
+  RETURN fk_isbn;
+END;
+
+END;

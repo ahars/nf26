@@ -1,0 +1,47 @@
+CREATE OR REPLACE TYPE BODY magasin 
+IS 
+
+MEMBER FUNCTION getDpt RETURN number
+IS
+BEGIN
+  RETURN dpt;
+END;
+
+MEMBER FUNCTION getDptnom RETURN varchar2
+IS
+BEGIN
+  RETURN dptnom;
+END;
+
+MEMBER FUNCTION getDptpopulation RETURN number
+IS
+BEGIN
+  RETURN dptpopulation;
+END;
+
+
+MEMBER FUNCTION getRayonnage RETURN varchar2
+IS
+BEGIN
+  RETURN rayonnage;
+END;
+
+MEMBER FUNCTION getRaynom RETURN varchar2
+IS
+BEGIN
+  RETURN ray_nom;
+END;
+
+MEMBER FUNCTION getMagasin RETURN varchar2
+IS
+BEGIN
+  RETURN mag;
+END;
+
+MEMBER FUNCTION getRayonBs RETURN number
+IS
+BEGIN
+  RETURN rayon_bs;
+END;
+
+END;
